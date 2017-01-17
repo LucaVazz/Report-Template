@@ -148,14 +148,13 @@
 %% NUMBERING SCHEMES:
 \usepackage{chngcntr}
 
-\ifcsname absolutecaptionnumbers \endcsname
+\ifcsname useabsolutecaptionnumbers\endcsname
     \counterwithout{figure}{chapter}
     \counterwithout{table}{chapter}
     \lstset{numberbychapter=false}
 \fi
 
-\ifcsname absolutefootnotenumbers \endcsname
-    \usepac
+\ifcsname useabsolutefootnotenumbers\endcsname
     \counterwithout{footnote}{chapter}
 \fi
 
