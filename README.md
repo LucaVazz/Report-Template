@@ -18,7 +18,7 @@ Please use XeLaTeX or LuaLaTex for building.
 
 
 ## How to Setup and Use
-1. inside `./setup.tex`:
+1. inside `./usersetup.tex`:
     - choose the type of your Report
     - choose if you want to write your report in english or german
     - fill out the fields for your informations
