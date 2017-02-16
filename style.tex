@@ -40,21 +40,21 @@
 % for chapters:
 \KOMAoption{chapterprefix}{true}
 \addtokomafont{disposition}{\normalfont} % removes the bold face
-\renewcommand{\chapterheadstartvskip}{\vspace{0em}}
+\RedeclareSectionCommand[beforeskip=0pt]{chapter}
 \addtokomafont{chapterprefix}{\normalfont\normalsize\color{PrimaryAccentColor}}
-\renewcommand{\chapterheadmidvskip}{\par\nobreak\vspace{0em}}
+\RedeclareSectionCommand[innerskip=-25pt]{chapter}
 \setkomafont{chapter}{\normalfont\huge\color{PrimaryAccentColor}}
-\renewcommand{\chapterheadendvskip}{\vspace{1.2em}}
+\RedeclareSectionCommand[afterskip=0.7em]{chapter}
 
 % for sections:
 \addtokomafont{section}{\normalfont\Large\color{SecondaryAccentColor}}
 \RedeclareSectionCommand[beforeskip=2em]{section}
-\RedeclareSectionCommand[afterskip=0.7em]{section}
+\RedeclareSectionCommand[afterskip=0.15em]{section}
 
 % for subsections:
 \addtokomafont{subsection}{\normalfont\large\color{SecondaryAccentColor}}
-\RedeclareSectionCommand[beforeskip=1em]{subsection}
-\RedeclareSectionCommand[afterskip=0.1em]{subsection}
+\RedeclareSectionCommand[beforeskip=0.5em]{subsection}
+\RedeclareSectionCommand[afterskip=1pt]{subsection}
 
 
 %% HEADERS AND FOOTERS:
@@ -116,6 +116,8 @@
 %% PARAGRAPH LAYOUT:
 \setlength{\parindent}{0pt}%removes initial indent
 
+\renewcommand{\baselinestretch}{1.1} 
+
 \hyphenpenalty=1000
 \exhyphenpenalty=1000
 
@@ -148,14 +150,13 @@
 %% NUMBERING SCHEMES:
 \usepackage{chngcntr}
 
-\ifcsname absolutecaptionnumbers \endcsname
+\ifcsname useabsolutecaptionnumbers\endcsname
     \counterwithout{figure}{chapter}
     \counterwithout{table}{chapter}
     \lstset{numberbychapter=false}
 \fi
 
-\ifcsname absolutefootnotenumbers \endcsname
-    \usepac
+\ifcsname useabsolutefootnotenumbers\endcsname
     \counterwithout{footnote}{chapter}
 \fi
 
