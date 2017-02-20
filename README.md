@@ -122,6 +122,49 @@ print(hi)
 > <img alt="Code Lisitng" src="http://i.imgur.com/8zXqzOZ.png" width="70%">
 
 
+#### Boxed Text
+```Latex
+Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+
+\begin{notebox}{<border-color>}{<icon>}
+<your text>
+\end{notebox}
+
+\begin{infobox}
+<your text>
+\end{infobox}
+
+\begin{warnbox}
+<your text>
+\end{warnbox}
+```
+
+> *Example:*
+> ```Latex
+Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+
+>\begin{notebox}{Green}{\faStar{}}
+>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vesti- bulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
+>\end{notebox}
+
+>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+
+>\begin{infobox}
+>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat.
+>\end{infobox}
+
+>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+
+>\begin{warnbox}
+>Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus.
+>\end{warnbox}
+
+>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+```
+
+> <img alt="Code Lisitng" src="http://i.imgur.com/7inW1M0.png" width="70%">
+
+
 #### Fancy Symbols
 The FontAwesome Package is bundeled into this repository, so you can use [all the nice symbols.](http://mirrors.ctan.org/fonts/fontawesome/doc/fontawesome.pdf).
 
