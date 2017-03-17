@@ -12,7 +12,7 @@
 \usepackage[a4paper]{geometry}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=3.0cm}
 
-\setlength{\footskip}{1.0cm}
+\setlength{\footskip}{0.25cm}
 
 
 %% FONTS:
@@ -72,6 +72,10 @@
   }
 ]{scrheadings.head.below.line}
 
+% make head dark-grey:
+\addtokomafont{pagehead}{\color{black!50!white}}
+
+% re-add page numbers alwys on the right
 \refoot[\pagemark]{\pagemark}
 \rofoot[\pagemark]{\pagemark}
 
