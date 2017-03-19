@@ -61,34 +61,33 @@ Please use XeLaTeX or LuaLaTex for building.
 
 > *Example (with captions):*
 > ```Latex
-\begin{stripedacenttable}
-    {A plain but nice looking table}
-    {\label{tab:ex1}}
-    {c^l^l}
-    {Quarter & asdf & foobar}
-    prev. Year & 42 & 17 \\
-    Q1 & -3 & -7 \\
-    Q2 & +7 & -1 \\
-    Q3 & -4 & +12 \\
-    Q4 & +2 & +2 \\
-\end{stripedacenttable}
-
+> \begin{stripedacenttable}
+>    {A plain but nice looking table}
+>    {\label{tab:ex1}}
+>    {c^l^l}
+>    {Quarter & asdf & foobar}
+>    prev. Year & 42 & 17 \\
+>    Q1 & -3 & -7 \\
+>    Q2 & +7 & -1 \\
+>    Q3 & -4 & +12 \\
+>    Q4 & +2 & +2 \\
+>\end{stripedacenttable}
+>
 >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-
+>
 >\begin{stripedtable}
-    {A colorful, nice looking table}
-    {\label{tab:ex1}}
-    {Green}
-    {c^l^l}
-    {Quarter & asdf & foobar}
-    prev. Year & 42 & 17 \\
-    Q1 & -3 & -7 \\
-    Q2 & +7 & -1 \\
-    Q3 & -4 & +12 \\
-    Q4 & +2 & +2 \\
-\end{stripedtable}
-```
-
+>    {A colorful, nice looking table}
+>    {\label{tab:ex1}}
+>    {Green}
+>    {c^l^l}
+>    {Quarter & asdf & foobar}
+>    prev. Year & 42 & 17 \\
+>    Q1 & -3 & -7 \\
+>    Q2 & +7 & -1 \\
+>    Q3 & -4 & +12 \\
+>    Q4 & +2 & +2 \\
+>\end{stripedtable}
+>```
 > <img alt="Tables" src="http://i.imgur.com/8FzhRYr.png" width="65%">
 
 
@@ -106,19 +105,18 @@ Please use XeLaTeX or LuaLaTex for building.
 
 > *Example:*
 > ```Latex
-\begin{lstlisting}[
-    caption={The Classic, realized in Python},
-    label={lst:python1},
-    captionpos=b,
-    language=Python
-]
+>\begin{lstlisting}[
+>    caption={The Classic, realized in Python},
+>    label={lst:python1},
+>    captionpos=b,
+>    language=Python
+>]
 > # classic
 >
 > hi = "Hello Wolrd"
-print(hi)
-\end{lstlisting}
-```
-
+>print(hi)
+>\end{lstlisting}
+>```
 > <img alt="Code Lisitng" src="http://i.imgur.com/8zXqzOZ.png" width="70%">
 
 
@@ -141,27 +139,26 @@ Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auct
 
 > *Example:*
 > ```Latex
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
-
+>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+>
 >\begin{notebox}{Green}{\faStar{}}
 >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vesti- bulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
 >\end{notebox}
-
+>
 >Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
-
+>
 >\begin{infobox}
 >Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat.
 >\end{infobox}
-
+>
 >Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
-
+>
 >\begin{warnbox}
 >Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus.
 >\end{warnbox}
-
+>
 >Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
-```
-
+>```
 > <img alt="Code Lisitng" src="http://i.imgur.com/7inW1M0.png" width="70%">
 
 
@@ -172,7 +169,6 @@ The FontAwesome Package is bundeled into this repository, so you can use [all th
 > ````Latex
 > \faFileTextO{} \faStar{}\faStar{}\faStar{}\faStar{}\faStar{} $=$ \faGraduationCap{}
 > ````
-
 > <img alt="Code Lisitng" src="http://i.imgur.com/wZAVaom.png" width="14%">
 
 The MarVoSym-Package is also loaded to provide [additional symbols](http://texdoc.net/texmf-dist/doc/fonts/marvosym/marvodoc.pdf).
@@ -181,30 +177,29 @@ The MarVoSym-Package is also loaded to provide [additional symbols](http://texdo
 > ````Latex
 > \Estatically{} \Forward{} \Printer{} \ \ \MVRightArrow{} \ \ \EyesDollar\EyesDollar\EyesDollar
 > ````
-
 > <img alt="Code Lisitng" src="http://i.imgur.com/lZ64aQA.png" width="14%">
 
 
 #### Citations in the Footnotes
 ````Latex
 \footnotecite{<source-reference>}
-```
+````
 
 
 #### Mark Incomplete Things You Need To Do
 ````Latex
 \incompletemarker{<note>}
-```
+````
 
 > <img alt="Code Lisitng" src="http://i.imgur.com/eSQSoao.png" width="40%">
 
 
 #### Prevent Pagebreaks absolutely, definitively
-```Latex
+````Latex
 \begin{absolutelynopagebreak}
     <content>
 \end{absolutelynopagebreak}
-```
+````
 
 
 
