@@ -12,7 +12,7 @@
 \usepackage[a4paper]{geometry}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=3.0cm}
 
-\setlength{\footskip}{1.0cm}
+\setlength{\footskip}{0.25cm}
 
 
 %% FONTS:
@@ -29,7 +29,7 @@
 ]
 
 \RequirePackage{fontawesome}
-\newfontfamily\FA[Path=lib/fonts/]{FontAwesome}
+
 
 % set \emph to be bold text:
 \let\emph\relax
@@ -40,21 +40,21 @@
 % for chapters:
 \KOMAoption{chapterprefix}{true}
 \addtokomafont{disposition}{\normalfont} % removes the bold face
-\renewcommand{\chapterheadstartvskip}{\vspace{0em}}
+\RedeclareSectionCommand[beforeskip=0pt]{chapter}
 \addtokomafont{chapterprefix}{\normalfont\normalsize\color{PrimaryAccentColor}}
-\renewcommand{\chapterheadmidvskip}{\par\nobreak\vspace{0em}}
+\RedeclareSectionCommand[innerskip=-25pt]{chapter}
 \setkomafont{chapter}{\normalfont\huge\color{PrimaryAccentColor}}
-\renewcommand{\chapterheadendvskip}{\vspace{1.2em}}
+\RedeclareSectionCommand[afterskip=0.7em]{chapter}
 
 % for sections:
 \addtokomafont{section}{\normalfont\Large\color{SecondaryAccentColor}}
 \RedeclareSectionCommand[beforeskip=2em]{section}
-\RedeclareSectionCommand[afterskip=0.7em]{section}
+\RedeclareSectionCommand[afterskip=0.15em]{section}
 
 % for subsections:
 \addtokomafont{subsection}{\normalfont\large\color{SecondaryAccentColor}}
-\RedeclareSectionCommand[beforeskip=1em]{subsection}
-\RedeclareSectionCommand[afterskip=0.1em]{subsection}
+\RedeclareSectionCommand[beforeskip=0.5em]{subsection}
+\RedeclareSectionCommand[afterskip=1pt]{subsection}
 
 
 %% HEADERS AND FOOTERS:
@@ -72,6 +72,10 @@
   }
 ]{scrheadings.head.below.line}
 
+% make head dark-grey:
+\addtokomafont{pagehead}{\color{black!50!white}}
+
+% re-add page numbers alwys on the right
 \refoot[\pagemark]{\pagemark}
 \rofoot[\pagemark]{\pagemark}
 
@@ -115,6 +119,8 @@
 
 %% PARAGRAPH LAYOUT:
 \setlength{\parindent}{0pt}%removes initial indent
+
+\renewcommand{\baselinestretch}{1.1} 
 
 \hyphenpenalty=1000
 \exhyphenpenalty=1000

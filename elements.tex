@@ -66,4 +66,41 @@
 
 
 % put sources more easily into your footnotes
-\newcommand{\footnotecite}[1]{\footnote{\emph{\cite{#1}}}}
+\newcommand{\footnotecite}[2][]{\footnote{\scriptsize{\cite[#1]{#2}}}}
+
+
+% place text in boxes to be more striking
+\newenvironment{notebox}[2]
+    {
+        \begin{table}[htbp]
+            \begin{center}
+                \rowcolors{1}{TertiaryAccentColor!15!Gray!10!White}{}
+                \begin{tabular}{m{0.6cm}m{14cm}}
+                    \arrayrulecolor{#1}
+                    \midrule
+                    {\color{#1}\Large{#2}}&
+    }
+    {
+                    \\
+                    \bottomrule
+                \end{tabular}
+            \end{center}
+        \end{table}
+        \vspace{-0.7cm}
+    }
+
+\newenvironment{infobox}
+    {
+        \begin{notebox}{SupportingPurple}{\faLocationArrow}
+    }
+    {
+        \end{notebox}
+    }
+
+\newenvironment{warnbox}
+    {
+        \begin{notebox}{SupportingYellow}{\faBolt}
+    }
+    {
+        \end{notebox}
+    }
