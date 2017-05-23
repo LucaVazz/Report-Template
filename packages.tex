@@ -52,12 +52,12 @@
 
 \usepackage{colortbl}  % use colors in tables
 
-\usepackage{booktabs}  % better horizontal lines in tables 
-                       %    provides \toprule[<breite>], \midrule[<breite>], 
-                       %     \cmidrule[<breite>](trim){a-b} and \bottomrule 
+\usepackage{booktabs}  % better horizontal lines in tables
+                       %    provides \toprule[<breite>], \midrule[<breite>],
+                       %     \cmidrule[<breite>](trim){a-b} and \bottomrule
 \usepackage[newcommand]{ragged2e}  % align and hypenate text in ragging environments nicer
 \usepackage{multirow}  % merge several cells over rows or columns
-                       %    provides \multirow{Zeilen}{Breite}{Inhalt} and  
+                       %    provides \multirow{Zeilen}{Breite}{Inhalt} and
                        %     \multicolumn{Spalten}{Ausrichtung}{Inhalt}
 
 
@@ -68,6 +68,7 @@
 
 \usepackage[backend=biber, style=authoryear]{biblatex}
 \addbibresource{resources/references.bib}
+\setlength\bibitemsep{0.5\baselineskip}
 \usepackage[footnote]{acronym}
 
 \usepackage[hidelinks]{hyperref}  % removes colored boxes around hyperlinks
@@ -92,7 +93,7 @@
 
 
 %% SOURCE CODE LISTINGS:
-\usepackage{listings} 
+\usepackage{listings}
 
 \input{lib/listing/html5_language}
 \input{lib/listing/javascript_language}
