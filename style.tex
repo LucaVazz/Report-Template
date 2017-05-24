@@ -107,7 +107,6 @@
 % localize label inside captions of Listings
 \renewcommand*{\lstlistingname}{\iflanguage{english}{Listing}{Quellcode}}
 
-
 % fonts inside the ToC:
 \renewcommand{\cftchapfont}{\scshape}
 \renewcommand{\cftsecfont}{\scshape}
@@ -148,8 +147,16 @@
 \renewcommand\cftfigafterpnum{\vskip12pt\par}  % modifies the space between entries taken from the
                                                %  same chapter when they are listed in the List of FiguresLoF
 
-\setlength{\footnotesep}{0.42cm}
 
+%% FOOTNOTES
+\setlength{\footnotesep}{0.42cm}
+\usepackage{dblfnote}  % places footnotes into two columns
+
+
+%% BIBLIOGRAPHY
+\DeclareFieldFormat{urldate}{%
+  visited on: \thefield{urlday}\adddot\thefield{urlmonth}\adddot \thefield{urlyear}
+}
 
 %% NUMBERING SCHEMES:
 \usepackage{chngcntr}
