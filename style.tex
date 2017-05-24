@@ -2,10 +2,11 @@
 %!TEX program = xelatex
 %!BIB program = biber
 
-%% --- Internal Template File ----------------------------------------------------------------------
+%% --- Internal Template File ---------------------------------------------------------------------
 %%   DEFINES A FANCY DOCUMENT DESIGN
 %%     in accordance to http://www.dhbw-mannheim.de/fileadmin/user_upload/Leitlinien_fuer_die_Bearbeitung_und_Dokumentation_Fakultaet_Technik_Mai_2016.pdf
-%% -------------------------------------------------------------------------------------------------
+%% ------------------------------------------------------------------------------------------------
+
 
 %% PAGE SETUP:
 %\usepackage[a4paper,showframe]{geometry}  % for "debugging" overfull pages
@@ -29,7 +30,6 @@
 ]
 
 \RequirePackage{fontawesome}
-
 
 % set \emph to be bold text:
 \let\emph\relax
@@ -150,7 +150,12 @@
 
 %% FOOTNOTES
 \setlength{\footnotesep}{0.42cm}
+
 \usepackage{dblfnote}  % places footnotes into two columns
+\DFNalwaysdouble
+
+\usepackage{fnpos}  % (re)position footnotes to the bottom of the page
+\makeFNbottom
 
 
 %% BIBLIOGRAPHY
@@ -159,6 +164,7 @@
 }
 
 %% NUMBERING SCHEMES:
+% chnage numbers to be absolute (they are relative to the chapter by default)
 \usepackage{chngcntr}
 
 \ifcsname useabsolutecaptionnumbers\endcsname
@@ -170,8 +176,6 @@
 \ifcsname useabsolutefootnotenumbers\endcsname
     \counterwithout{footnote}{chapter}
 \fi
-
-% all numbers are relative to the cahpter by default
 
 
 %% SOURCE CODE LISTINGS:
