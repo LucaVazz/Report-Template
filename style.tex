@@ -17,15 +17,13 @@
 
 %% FONTS:
 \usepackage{fontspec}
-\setmainfont{Karma-Regular}[
+\setmainfont{Karma-Regular.otf}[
     Path = lib/fonts/,
-    Extension = .otf,
-    BoldFont = Karma-Bold
+    BoldFont = Karma-Bold.otf
 ]
 
-\setmonofont[Scale=0.84]{Inconsolata-g}[
+\setmonofont{Inconsolata-g.otf}[
     Path = lib/fonts/,
-    Extension = .otf
 ]
 
 \RequirePackage{fontawesome}
@@ -132,7 +130,7 @@
 
 %% ITEM LISTS:
 \usepackage{enumitem}
-\setlist{nosep}
+\setlist{nosep, parsep=0pt, before={\parskip=0pt}}  % remove parskip onyl around lists
 
 \renewcommand{\labelitemi}  {\color{black!70}{\faAngleRight}}
 \renewcommand{\labelitemii} {\color{black!70}{\faAngleRight}}
