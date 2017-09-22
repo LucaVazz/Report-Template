@@ -16,7 +16,7 @@
     %% UPPER TITLE BLOCK:
     \begin{spacing}{1.5}
         \vspace{3.5cm}
-        {\color{PrimaryAccentColor}\huge{\emergencystretch=.3em \reporttitle}} \\
+        {\color{PrimaryAccentColor}\huge{\emergencystretch=.3em \reporttitle}}
     \end{spacing}
 
     \opt{Bachelor, Study}{
@@ -46,16 +46,21 @@
     \vspace{0.07cm}
     \begin{tabbing}
         {\small\iflanguage{english}{at}{an der}} \=\dhbwDE \\
-        \>\iflanguage{english}{\footnotesize\dhbwEN}{~} \\
+        \>\iflanguage{english}{\footnotesize\dhbwEN}{~}
     \end{tabbing}
 
-    \vspace{0.35cm}
+    \vspace{0.4cm}
 
     {\small\iflanguage{english}{written by}{von}} {\large{\emergencystretch=.3em \studentname}} \\
 
-    \vspace{0.7cm}
+    \vspace{0.2cm}
 
     \handoverdate \\
+
+    \ifcsname activatedraftmark\endcsname
+        \vspace{0.4cm}
+        {\color{SupportingDeepOrange}\huge \draftrevision\ \iflanguage{english}{Draft}{Entwurf}} \\
+    \fi
 
     %% LOWER METAINFO BLOCK:
     \vfill

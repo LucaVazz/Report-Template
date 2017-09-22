@@ -46,7 +46,12 @@
 }
 
 \hypersetup{
-    pdftitle={\reporttype\ - \reporttitle\ - \studentname},
+    pdftitle={
+        \reporttype\ - \reporttitle\ - \studentname
+        \ifcsname activatedraftmark\endcsname
+            \ - \draftrevision\ \iflanguage{english}{Draft}{Entwurf}
+        \fi
+    },
     pdfauthor={\studentname},
     pdfsubject={\reporttitle},
     pdfkeywords={\keywords}
@@ -59,13 +64,13 @@
 \begin{document}
     % title page:
     \pdfbookmark[1]{Titlepage}{titlepage}
-    \begin{titlepage} 
+    \begin{titlepage}
         \input{titlepage}
     \end{titlepage}
 
     \pagenumbering{Roman}
 
-    \sloppy  % encourages LaTeX to condone lager gaps between words for the sake of keeping the 
+    \sloppy  % encourages LaTeX to condone lager gaps between words for the sake of keeping the
              %  text inside the page-margins
 
     \begin{absolutelynopagebreak}
