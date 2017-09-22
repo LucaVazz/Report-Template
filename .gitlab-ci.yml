@@ -1,0 +1,10 @@
+image: radkappe/latex
+build_latex:
+  script:
+    - xelatex main.tex
+    - biber main.bcf
+    - xelatex main.tex 
+    - xelatex main.tex
+  artifacts:
+    paths:
+      - main.pdf
