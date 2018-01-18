@@ -57,7 +57,7 @@ Please use XeLaTeX or LuaLaTex for building.
 
 - *<label>* needs to be enclosed inside `\label` to keep the auto-completion functionality of your editor working correctly
 - formating should have the form `x^x^x^...` where `x` specifies the alignment for the column
-    + possible aligments: `l`: left-aligned , `c`: centered , `r`: right-aligned , `p{xcm}`: left-aligend, with automatic line-breaks if the row would stretch over x cm
+    + possible aligments: `l`: left-aligned , `c`: centered , `r`: right-aligned , `p{ycm}`: left-aligend, with automatic line-breaks if the column would stretch over y cm
     + inside a `p` cell, additionally `\newline{}` can be used to force a line-break
 
 > *Example (with captions):*
