@@ -55,11 +55,16 @@
 
     \vspace{0.2cm}
 
-    \handoverdate \\
-
     \ifcsname activatedraftmark\endcsname
-        \vspace{0.4cm}
+        {
+            \setstcolor{SupportingDeepOrange}
+            \st{\handoverdate} \quad {\color{SupportingDeepOrange}\today}
+        }
+
+        \vspace{1cm}
         {\color{SupportingDeepOrange}\huge \draftrevision\ \iflanguage{english}{Draft}{Entwurf}} \\
+    \else
+        \handoverdate \\
     \fi
 
     %% LOWER METAINFO BLOCK:
