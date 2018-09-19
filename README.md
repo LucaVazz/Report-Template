@@ -20,17 +20,17 @@ Please use XeLaTeX or LuaLaTex for building.
 ## How to Setup and Use
 1. inside `./usersetup.tex`:
     - choose the type of your report
-    - choose if you want to write your report in english or german
-    - fill out the fields for your informations
+    - fill out the fields providing your informations
+    - choose additional options if you like, i.e. adding a confidentiality clause, marking the output as a draft or adapting names in the output for a german main part
     - choose your desired color theme or define your own
-2. places the entries for your bibliography into `./resources/references.bib`
+2. place the entries for your bibliography into `./resources/references.bib`
 3. place the `.tex`-files containing your content into `./content` and define the structure of your content inside `./content/content.tex`
 4. fill your acronyms and custom macros as needed into `./content/acronyms.tex` and `./content/macros.tex`
 5. save your image files into `./resources`
-    - you can then use them easily by just referencing `\includegraphics{asdf}` if you saved your file at `./resources/asdf.png`
+    - you can then use them easily by just referencing e.g. `\includegraphics{asdf}` if you saved your file at `./resources/asdf.png`
 6. build the document
     - when using Sublime Text: after installing [LateXTools](https://github.com/SublimeText/LaTeXTools#requirements-and-setup), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>, navigate to "LaTeX - Basic Builder - XeLaTeX" using the arrow keys and press <kbd>Return</kbd>. From now on you can simple build by pressing <kbd>Ctrl</kbd>+<kbd>B</kbd>.
-    - when using TeXworks: make sure to select "XeLaTeX+MakeIndex+BibTeX" in the dropdown isnide the top tool-bar before pressing the green Typeset button.
+    - when using TeXworks: make sure to select "XeLaTeX+MakeIndex+BibTeX" in the dropdown inside the top tool-bar before pressing the green Typeset button.
     - when using the command line directly:
         ```
         xelatex main.tex && biber main.bcf && xelatex main.tex && xelatex main.tex

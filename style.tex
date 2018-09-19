@@ -34,6 +34,21 @@
 \DeclareTextFontCommand{\emph}{\bfseries}
 
 
+%% LANGUAGE
+\ifcsname usegerman\endcsname
+    \setdefaultlanguage[variant=german, latesthyphen=true]{german}
+    \setotherlanguage{english}
+    \usepackage[hidelinks, german]{hyperref}
+    % hyperref needs to be told about the language to print the correct names for \autoref's,
+    %  that's why its imported here
+    % additionaly, hidelinks removes the colored boxes around hyperlinks
+\else
+    \setdefaultlanguage{english}
+    \setotherlanguage[variant=german, latesthyphen=true]{german}
+    \usepackage[hidelinks]{hyperref}
+\fi
+
+
 %% HEADINGS:
 % for chapters:
 \KOMAoption{chapterprefix}{true}
