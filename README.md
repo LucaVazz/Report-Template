@@ -3,6 +3,11 @@ Please use XeLaTeX or LuaLaTex for building.
 
 
 
+## New to LaTeX?
+Get a quick start by reading [learn LaTe**X** in **Y** minutes](https://learnxinyminutes.com/docs/latex/).
+
+
+
 ## Features
 - all formal layout-properties of the document are in accordance to the requirements given by the Technical Faculty of DHBW Mannheim.
 - Titlepages for Internship Reports, Study Reports and Bachelor Thesis in accordance to these requirements included
